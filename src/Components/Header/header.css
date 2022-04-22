@@ -1,0 +1,130 @@
+.sidebar {
+    width: 200px;
+    padding-right: 10px;
+    background-color: #17142E;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: fixed;
+    height: 99%;
+    overflow: auto;
+}
+
+.header-logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+
+.header-logo svg {
+    margin-right: 10px;
+}
+
+.header-logo p {
+    color: #f0f0f0;
+    font-size: 20px;
+    padding-top: 6px;
+}
+
+.sidebar a {
+    display: block;
+    color: #AAABB4;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out .4s;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.sidebar a svg{
+    margin-right: .5em;
+}
+
+.sidebar a:hover {
+    background-color: #fff;
+    font-weight: bold;
+    color: #7C70CF;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.profile-div {
+    background-color: #17142E;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    margin-left: 10px;
+}
+
+.profile-div img {
+    border-radius: 50%;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    -webkit-filter: drop-shadow(2px 3px 6px #121212);
+    filter: drop-shadow(2px 3px 6px #121212);
+    object-fit: cover;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    div.content{
+        margin-left: 0;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .sidebar div {
+        display: none;
+    }
+
+    .sidebar a svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .sitebar a svg {
+        display: none;
+    }
+    
+}
